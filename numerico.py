@@ -1,15 +1,14 @@
-
+#-----------Ecuación Numerica--------------------
 import matplotlib.pyplot as plt
 import math
+
 k=9.00*pow(10,9)
 densidad=20.0
 yi=0.02
 qi=densidad*yi
-
 E=[]
 
 for x in range(100):
-
     if x>=2:
         distancia=math.sqrt(((x*yi)**2+x**2))
         trapecio=(2.00*k*qi/(distancia**2))*x         #x=cos porque es el eje horizontal del vector r (ver figura)
@@ -17,6 +16,7 @@ for x in range(100):
 
 x=range(2,100)
 
+#------------------------GRAFICA--------------------------
 # Crear la gráfica
 plt.figure(figsize=(8, 6))  # Tamaño de la figura
 
