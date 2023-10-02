@@ -4,7 +4,7 @@ import math
 
 k=9.00*pow(10,9)
 permitiVacio=8.85*pow(10,-12)
-densidad=20.0
+densidad=20.0*pow(10,-9)
 CampoE=[]
 
 for x in range (100):
@@ -26,7 +26,7 @@ plt.xlabel('X (m)')
 plt.ylabel('E (N/C)')
 
 # Título de la gráfica
-plt.title('Grafico E (N/C) vs X (m)')
+plt.title('Grafico E (N/C) vs X (m) - Metodo Teorico')
 
 # Mostrar la gráfica
 plt.grid(True)  # Mostrar cuadrícula
