@@ -26,7 +26,7 @@ plt.xlabel('X (m)')
 plt.ylabel('E (N/C)')
 
 # Título de la gráfica
-plt.title('Grafico E (N/C) vs X (m) - Metodo Teorico')
+plt.title('Grafico E (N/C) vs X (m) Metodo Teorico')
 
 # Mostrar la gráfica
 plt.grid(True)  # Mostrar cuadrícula
