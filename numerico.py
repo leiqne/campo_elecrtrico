@@ -7,12 +7,16 @@ densidad=20.0*pow(10,-9)
 yi=0.02
 qi=densidad*yi
 E=[]
+sumatoria=0
 
 for x in range(100):
     if x>=2:
-        distancia=math.sqrt(((x*yi)**2+x**2))
-        trapecio=(2.00*k*qi/(distancia**2))*x         #x=cos porque es el eje horizontal del vector r (ver figura)
-        E.append(trapecio)
+        for y in range(32):
+            distancia=math.sqrt(((y*yi)**2+x**2))
+            trapecio=(2.00*k*qi*y/(distancia**2))*x         #x=cos porque es el eje horizontal del vector r (ver figura)
+            sumatoria+=trapecio
+        E.append(sumatoria)
+        sumatoria=0
 
 x=range(2,100)
 
