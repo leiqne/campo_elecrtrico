@@ -4,7 +4,7 @@ import math
 
 k=9.00*pow(10,9)
 densidad=20.0*pow(10,-9)
-yi=0.02
+yi=0.002
 qi=densidad*yi
 E=[]
 sumatoria=0
