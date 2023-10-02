@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import math
 
 k=9.00*pow(10,9)
-densidad=20.0
+densidad=20.0*pow(10,-9)
 yi=0.02
 qi=densidad*yi
 E=[]
@@ -28,7 +28,7 @@ plt.xlabel('X (m)')
 plt.ylabel('E (N/C)')
 
 # Título de la gráfica
-plt.title('Grafico E (N/C) vs X (m)')
+plt.title('Grafico E (N/C) vs X (m) Metodo Numerico')
 
 # Mostrar la gráfica
 plt.grid(True)  # Mostrar cuadrícula
